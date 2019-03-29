@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link href ="https://fonts.googleapis.com/css?family=Cookie" rel=stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Website Design</title>
+  </head>
+  <script type="text/javascript">
+    function startTimer() {
+            setInterval(displayNextImage, 6000);
+        }
+        function displayNextImage() {
+              var i =document.getElementById('div');
+              i.removeChild(i.childNodes[0]);
+              window.location = "index2.html";
+              //document.body.style.backgroundImage = "url('vidhi.jpg')";
+      }
+
+
+
+
+    </script>
+  <body onload="startTimer()">
+
+    <div class="section" id="div">
+      <video autoplay muted>
+        <source src="toi.mp4">
+        </video>
+      </div>
+
+
+</body>
+</html>
